@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrümpelung Stuttgart zum Festpreis | Liba</title>
+<meta name="description" content="Entrümpelung Stuttgart zum Festpreis: Wohnung, Haus, Keller und Messie-Wohnung. Kostenlose Besichtigung in allen 23 Stadtbezirken, Wertanrechnung, besenreine Übergabe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blau:#0E5BA7;
+  --tiefblau:#0B3A63;
+  --gruen:#2E9E5B;
+  --gruen-dunkel:#268049;
+  --flaeche:#F4F7FA;
+  --rahmen:#DCE3EB;
+  --text:#1C2430;
+  --text-hell:#5A6775;
+  --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--text);
+  font-size:16px;
+  line-height:1.6;
+  background:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Manrope',system-ui,sans-serif;line-height:1.18;letter-spacing:-.015em}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* Fokus sichtbar halten */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:3px solid #FFC53D;outline-offset:2px;
+}
+
+/* ---------- Infoleiste ---------- */
+.topbar{background:var(--blau);color:#fff;font-size:13.5px}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:38px}
+.topbar-facts{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.topbar-facts span{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.topbar svg{flex:none}
+.topbar-tel{font-weight:600;text-decoration:none;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.topbar-tel:hover{text-decoration:underline}
+.sterne{color:#FFC53D;letter-spacing:1px}
+
+/* ---------- Header ---------- */
+.header{
+  position:sticky;top:0;z-index:60;background:#fff;
+  border-bottom:1px solid var(--rahmen);
+}
+.header .wrap{display:flex;align-items:center;gap:30px;min-height:86px}
+.logo img{height:56px;width:auto}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15.5px;font-weight:500}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--blau);border-bottom-color:var(--blau)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:'Manrope',sans-serif;font-weight:700;font-size:15.5px;
+  padding:13px 22px;border-radius:6px;text-decoration:none;border:0;cursor:pointer;
+  line-height:1.2;white-space:nowrap;
+}
+.btn-gruen{background:var(--gruen);color:#fff}
+.btn-gruen:hover{background:var(--gruen-dunkel)}
+.btn-weiss{background:#fff;color:var(--tiefblau);border:2px solid #fff}
+.btn-weiss:hover{background:transparent;color:#fff}
+.btn-gross{padding:17px 28px;font-size:16.5px}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  background:#0B3A63 url('assets/hero-wohnung-leer.jpg') center/cover no-repeat;
+  color:#fff;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(8,42,74,.93) 0%,rgba(8,42,74,.82) 40%,rgba(11,58,99,.46) 70%,rgba(11,58,99,.22) 100%);
+}
+.hero .wrap{
+  position:relative;display:grid;grid-template-columns:1fr 420px;gap:56px;
+  padding-top:62px;padding-bottom:62px;align-items:start;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
+  padding:7px 14px;border-radius:100px;font-size:13.5px;font-weight:600;margin-bottom:20px;
+}
+.hero h1{font-size:clamp(2.1rem,3.6vw,3.15rem);font-weight:800;margin-bottom:18px}
+.hero-sub{font-size:18px;color:#D5E3F1;max-width:33em;margin-bottom:30px}
+
+.vorteile{display:grid;grid-template-columns:1fr 1fr;gap:18px 26px;margin-bottom:32px;max-width:640px}
+.vorteil{display:flex;gap:12px}
+.vorteil-icon{
+  flex:none;width:38px;height:38px;border-radius:6px;
+  background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;
+}
+.vorteil b{display:block;font-family:'Manrope',sans-serif;font-size:15.5px;font-weight:700;margin-bottom:2px}
+.vorteil p{font-size:14px;color:#C3D6E8;line-height:1.5}
+
+.hero-aktionen{display:flex;gap:14px;flex-wrap:wrap}
+.leistungs-chips{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;border-radius:100px;text-decoration:none;
+  font-family:'Manrope',sans-serif;font-size:14.5px;font-weight:700;
+  color:#fff;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.30);
+}
+.chip:hover{background:rgba(255,255,255,.22)}
+.chip-aktiv{background:#fff;color:var(--tiefblau);border-color:#fff}
+.chip-aktiv:hover{background:#EAF2FA}
+.chip svg{flex:none}
+
+
+/* ---------- Formularkarte ---------- */
+.form-karte{
+  background:#fff;color:var(--text);border-radius:10px;
+  box-shadow:0 18px 50px rgba(5,28,50,.34);overflow:hidden;
+}
+.form-kopf{background:var(--tiefblau);color:#fff;padding:20px 24px}
+.form-kopf h2{font-size:20px;font-weight:800;margin-bottom:4px}
+.form-kopf p{font-size:13.5px;color:#B9CEE2}
+.form-koerper{padding:22px 24px 24px}
+.feld{margin-bottom:13px}
+.feld label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;color:#3A4754}
+.feld input,.feld select,.feld textarea{
+  width:100%;font-family:inherit;font-size:15px;color:var(--text);
+  padding:11px 13px;border:1px solid var(--rahmen);border-radius:6px;background:#fff;
+}
+.feld input::placeholder,.feld textarea::placeholder{color:#9AA7B4}
+.feld input:focus,.feld select:focus,.feld textarea:focus{border-color:var(--blau)}
+.feld-paar{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.feld textarea{resize:vertical;min-height:74px}
+.zustimmung{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--text-hell);margin:14px 0 16px}
+.zustimmung input{margin-top:3px;flex:none;width:16px;height:16px;accent-color:var(--blau)}
+.zustimmung a{color:var(--blau)}
+.form-karte .btn{width:100%}
+.form-fuss{
+  display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  border-top:1px solid var(--rahmen);margin-top:18px;padding-top:14px;
+  font-size:12.5px;color:var(--text-hell);
+}
+.form-fuss span{display:flex;align-items:center;gap:6px}
+
+/* ---------- Vertrauensleiste ---------- */
+.vertrauen{background:var(--flaeche);border-bottom:1px solid var(--rahmen)}
+.vertrauen .wrap{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:18px;
+  padding-top:22px;padding-bottom:22px;
+}
+.vertrauen-punkt{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;line-height:1.35}
+.vertrauen-punkt small{display:block;font-weight:400;font-size:12.5px;color:var(--text-hell)}
+.vertrauen svg{flex:none}
+
+/* ---------- WhatsApp ---------- */
+.wa{
+  position:fixed;right:20px;bottom:20px;z-index:80;
+  width:58px;height:58px;border-radius:50%;background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 20px rgba(0,0,0,.28);text-decoration:none;
+}
+.wa:hover{background:#1EBE5A}
+
+
+/* ---------- Sektionen ---------- */
+.sektion{padding:74px 0}
+section[id]{scroll-margin-top:104px}
+.sektion-grau{background:var(--flaeche);border-top:1px solid var(--rahmen);border-bottom:1px solid var(--rahmen)}
+.kopf{text-align:center;max-width:720px;margin:0 auto 42px}
+.label{
+  display:block;font-family:'Manrope',sans-serif;font-size:13.5px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blau);margin-bottom:12px;
+}
+.kopf h2{font-size:clamp(1.65rem,2.5vw,2.25rem);font-weight:800;margin-bottom:12px}
+.kopf p{color:var(--text-hell);font-size:17px}
+
+.liste{list-style:none;display:grid;gap:9px;margin-bottom:24px}
+.liste li{position:relative;padding-left:27px;font-size:15px}
+.liste li::before{content:"\2713";position:absolute;left:0;top:-1px;color:var(--gruen);font-weight:700}
+.mehr{
+  font-family:'Manrope',sans-serif;font-weight:700;font-size:15.5px;color:var(--blau);
+  text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;
+}
+.mehr:hover{color:var(--tiefblau)}
+
+/* Grosse Leistungskarte */
+.leistung-gross{
+  display:grid;grid-template-columns:1.02fr 1fr;
+  border:1px solid var(--rahmen);border-radius:10px;overflow:hidden;background:#fff;margin-bottom:26px;
+}
+.leistung-gross img{width:100%;height:100%;min-height:340px;object-fit:cover}
+.leistung-gross-text{padding:40px}
+.badge{
+  display:inline-block;background:#E7F1FA;color:var(--blau);
+  font-family:'Manrope',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;padding:6px 11px;border-radius:4px;margin-bottom:15px;
+}
+.leistung-gross h3{font-size:26px;font-weight:800;margin-bottom:12px}
+.leistung-gross > .leistung-gross-text > p{color:var(--text-hell);margin-bottom:20px;font-size:15.5px}
+
+/* Drei Karten */
+.leistungen-drei{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.karte{
+  display:flex;flex-direction:column;background:#fff;
+  border:1px solid var(--rahmen);border-radius:10px;overflow:hidden;
+}
+.karte img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.karte-text{padding:26px;display:flex;flex-direction:column;flex:1}
+.karte h3{font-size:19.5px;font-weight:700;margin-bottom:9px}
+.karte p{font-size:14.5px;color:var(--text-hell);line-height:1.6;margin-bottom:18px;flex:1}
+.hinweis{
+  margin-top:22px;font-size:14.5px;color:var(--text-hell);
+  background:#fff;border-left:3px solid var(--blau);padding:15px 18px;border-radius:0 6px 6px 0;
+}
+.sektion-grau .hinweis{background:#fff}
+
+/* Vorher und Nachher */
+.vn{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1000px;margin:0 auto}
+.vn figure{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--rahmen);margin:0}
+.vn img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.vn figcaption{
+  position:absolute;top:14px;left:14px;
+  font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:#fff;padding:7px 13px;border-radius:4px;
+}
+.vn-vorher figcaption{background:rgba(11,58,99,.92)}
+.vn-nachher figcaption{background:var(--gruen)}
+.vn-unterzeile{text-align:center;margin-top:20px;color:var(--text-hell);font-size:15.5px}
+.projekt + .projekt{margin-top:46px;padding-top:46px;border-top:1px solid var(--rahmen)}
+
+@media (max-width:900px){
+  .leistung-gross{grid-template-columns:1fr}
+  .leistung-gross img{min-height:240px}
+  .leistung-gross-text{padding:30px 26px}
+  .leistungen-drei{grid-template-columns:1fr}
+  .vn{grid-template-columns:1fr}
+  .sektion{padding:54px 0}
+}
+
+
+/* ---------- Drei Spalten Leistungsumfang ---------- */
+.drei-spalten{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.spalte{background:#fff;border:1px solid var(--rahmen);border-radius:10px;padding:28px}
+.spalte h3{font-size:19px;font-weight:800;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid var(--blau)}
+.spalte ul{list-style:none;display:grid;gap:8px}
+.spalte li{position:relative;padding-left:24px;font-size:15px}
+.spalte li::before{content:"\2713";position:absolute;left:0;top:-1px;color:var(--gruen);font-weight:700}
+
+/* ---------- Ablauf ---------- */
+.ablauf{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:schritt}
+.schritt{background:#fff;border:1px solid var(--rahmen);border-radius:10px;padding:30px 24px;position:relative}
+.schritt-nr{
+  width:46px;height:46px;border-radius:50%;background:var(--blau);color:#fff;
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:19px;
+}
+.schritt h3{font-size:18px;font-weight:700;margin-bottom:9px}
+.schritt p{font-size:14.5px;color:var(--text-hell);line-height:1.6}
+.ablauf-aktionen{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:38px}
+.btn-blau{background:var(--blau);color:#fff}
+.btn-blau:hover{background:var(--tiefblau)}
+.btn-rand{background:#fff;color:var(--tiefblau);border:2px solid var(--rahmen)}
+.btn-rand:hover{border-color:var(--blau);color:var(--blau)}
+
+/* ---------- Einsatzgebiete ---------- */
+.orte{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ort{
+  display:flex;align-items:center;gap:12px;background:#fff;text-decoration:none;
+  border:1px solid var(--rahmen);border-radius:8px;padding:18px 18px;
+  font-family:'Manrope',sans-serif;font-weight:700;font-size:16px;
+}
+.ort:hover{border-color:var(--blau);background:#F7FAFD}
+.ort svg{flex:none;color:var(--blau)}
+.ort small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:13px;color:var(--text-hell)}
+.orte-zusatz{text-align:center;margin-top:26px;color:var(--text-hell);font-size:15.5px}
+
+/* ---------- Warum ---------- */
+.warum{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 34px}
+.grund-icon{
+  width:44px;height:44px;border-radius:8px;background:#E7F1FA;color:var(--blau);
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+.grund h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.grund p{font-size:14.5px;color:var(--text-hell);line-height:1.6}
+
+/* ---------- Preise ---------- */
+.preis-tabelle{
+  width:100%;border-collapse:collapse;background:#fff;
+  border:1px solid var(--rahmen);border-radius:10px;overflow:hidden;
+}
+.preis-tabelle caption{
+  caption-side:top;background:var(--tiefblau);color:#fff;text-align:left;
+  padding:16px 22px;font-family:'Manrope',sans-serif;font-weight:700;font-size:16.5px;
+}
+.preis-tabelle td{padding:14px 22px;border-top:1px solid var(--rahmen);font-size:15.5px}
+.preis-tabelle tr:first-child td{border-top:0}
+.preis-tabelle td:last-child{text-align:right;font-family:'Manrope',sans-serif;font-weight:800;color:var(--blau);white-space:nowrap}
+.preis-hinweis{margin-top:18px;font-size:14px;color:var(--text-hell)}
+
+/* ---------- Vergleich ---------- */
+.vergleich-huelle{overflow-x:auto}
+.vergleich{width:100%;border-collapse:collapse;min-width:720px;background:#fff;border:1px solid var(--rahmen)}
+.vergleich th,.vergleich td{padding:14px 18px;border-top:1px solid var(--rahmen);font-size:15px;text-align:left}
+.vergleich thead th{
+  background:var(--flaeche);font-family:'Manrope',sans-serif;font-weight:700;font-size:15.5px;border-top:0;
+}
+.vergleich thead th.hervor{background:var(--blau);color:#fff}
+.vergleich td.hervor{background:#F2F8FD;font-weight:600}
+.vergleich td.hervor span{color:var(--gruen);font-weight:700;margin-right:7px}
+.vergleich td.blass{color:var(--text-hell)}
+
+/* ---------- Ueber uns ---------- */
+.ueber{display:grid;grid-template-columns:.8fr 1fr;gap:48px;align-items:center}
+.ueber-fakten{
+  background:var(--tiefblau);border-radius:10px;padding:36px 34px;color:#fff;
+  display:grid;grid-template-columns:1fr 1fr;gap:30px 22px;
+}
+.fakt b{
+  display:block;font-family:'Manrope',sans-serif;font-size:32px;font-weight:800;
+  line-height:1;margin-bottom:8px;
+}
+.fakt span{font-size:14px;color:#B9CEE2;line-height:1.45;display:block}
+.fakt .sterne{color:#FFC53D;font-size:18px;letter-spacing:1px;margin-bottom:8px;display:block}
+.ueber h2{font-size:clamp(1.6rem,2.3vw,2.05rem);font-weight:800;margin-bottom:16px}
+.ueber p{color:var(--text-hell);margin-bottom:14px;font-size:15.5px}
+.zitat{
+  border-left:4px solid var(--blau);background:#F2F8FD;padding:20px 22px;border-radius:0 8px 8px 0;margin-top:22px;
+}
+.zitat p{color:var(--text);font-style:italic;margin-bottom:8px}
+.zitat cite{font-style:normal;font-size:14px;font-weight:700;color:var(--blau)}
+
+/* ---------- Bewertungen ---------- */
+.google-kasten{
+  display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;
+  background:#fff;border:1px solid var(--rahmen);border-radius:10px;padding:22px 26px;
+  max-width:560px;margin:0 auto 30px;
+}
+.google-note{font-family:'Manrope',sans-serif;font-size:34px;font-weight:800;line-height:1}
+.google-kasten .sterne{font-size:19px}
+.google-kasten small{display:block;color:var(--text-hell);font-size:13.5px;margin-top:3px}
+.bewertungen{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:840px;margin:0 auto}
+.bewertung{background:#fff;border:1px solid var(--rahmen);border-radius:10px;padding:24px}
+.bewertung .sterne{font-size:16px;margin-bottom:10px;display:block}
+.bewertung p{font-size:14.5px;color:var(--text-hell);line-height:1.65;margin-bottom:14px}
+.bewertung cite{font-style:normal;font-weight:700;font-size:14.5px}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:820px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--rahmen);border-radius:8px;margin-bottom:12px}
+.faq summary{
+  cursor:pointer;list-style:none;padding:18px 52px 18px 22px;position:relative;
+  font-family:'Manrope',sans-serif;font-weight:700;font-size:16.5px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);
+  color:var(--blau);font-size:24px;font-weight:700;line-height:1;
+}
+.faq details[open] summary::after{content:"\2013"}
+.faq details[open] summary{color:var(--blau)}
+.faq-inhalt{padding:0 22px 20px;color:var(--text-hell);font-size:15px;line-height:1.7}
+
+/* ---------- Hotline ---------- */
+.hotline{background:var(--tiefblau);color:#fff}
+.hotline .wrap{
+  display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+  padding-top:38px;padding-bottom:38px;
+}
+.hotline h2{font-size:clamp(1.4rem,2.1vw,1.85rem);font-weight:800;margin-bottom:6px}
+.hotline p{color:#B9CEE2;font-size:15.5px}
+.hotline-aktionen{display:flex;gap:13px;flex-wrap:wrap}
+
+/* ---------- Footer ---------- */
+.fuss{background:#082A4A;color:#C3D6E8;font-size:14.5px}
+.fuss .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px;padding-top:54px;padding-bottom:40px}
+.fuss img{height:52px;width:auto;margin-bottom:16px}
+.fuss h3{
+  color:#fff;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px;
+}
+.fuss ul{list-style:none;display:grid;gap:9px}
+.fuss a{text-decoration:none}
+.fuss a:hover{color:#fff;text-decoration:underline}
+.fuss-kontakt{display:grid;gap:7px;margin-top:4px}
+.fuss-unten{
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.fuss-unten .wrap{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:18px;padding-bottom:18px;font-size:13.5px;
+}
+
+@media (max-width:1040px){
+  .drei-spalten{grid-template-columns:1fr}
+  .ablauf{grid-template-columns:1fr 1fr}
+  .orte{grid-template-columns:1fr 1fr}
+  .warum{grid-template-columns:1fr 1fr}
+  .ueber{grid-template-columns:1fr;gap:28px}
+  .bewertungen{grid-template-columns:1fr}
+  .fuss .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  .ablauf{grid-template-columns:1fr}
+  .orte{grid-template-columns:1fr}
+  .warum{grid-template-columns:1fr}
+  .fuss .wrap{grid-template-columns:1fr;gap:28px}
+  .preis-tabelle td{padding:12px 16px;font-size:14.5px}
+}
+
+@media (max-width:1040px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .form-karte{max-width:460px}
+  .nav{display:none}
+  .burger{display:block}
+  .header-cta{display:none}
+}
+@media (max-width:1040px){
+  .vertrauen .wrap{grid-template-columns:repeat(3,1fr);gap:16px}
+}
+@media (max-width:620px){
+  .topbar-facts span:nth-child(n+2){display:none}
+  .vorteile{grid-template-columns:1fr}
+  .vertrauen .wrap{grid-template-columns:1fr 1fr;gap:14px}
+  .hero .wrap{padding-top:44px;padding-bottom:44px}
+  .logo img{height:46px}
+  .header .wrap{min-height:72px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ================= Unterseiten ================= */
+
+/* Kompakter Hero fuer Unterseiten */
+.hero-unter .wrap{padding-top:52px;padding-bottom:52px}
+.hero-unter h1{font-size:clamp(1.9rem,3.1vw,2.75rem)}
+
+/* Objektarten */
+.objekte{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.objekt{background:#fff;border:1px solid var(--rahmen);border-radius:10px;padding:28px 26px}
+.objekt-icon{
+  width:44px;height:44px;border-radius:8px;background:#E7F1FA;color:var(--blau);
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+.objekt h3{font-size:18.5px;font-weight:700;margin-bottom:9px}
+.objekt p{font-size:14.5px;color:var(--text-hell);line-height:1.6}
+
+/* Zweispaltiger Infoblock */
+.info-zwei{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.info-block{background:#fff;border:1px solid var(--rahmen);border-radius:10px;padding:32px}
+.info-block h3{font-size:20px;font-weight:800;margin-bottom:12px}
+.info-block p{color:var(--text-hell);font-size:15.5px;margin-bottom:14px}
+
+/* Preisfaktoren */
+.faktoren{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 30px;margin-bottom:34px}
+.faktor{display:flex;gap:13px}
+.faktor-nr{
+  flex:none;width:30px;height:30px;border-radius:50%;background:#E7F1FA;color:var(--blau);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:14px;
+}
+.faktor b{display:block;font-family:'Manrope',sans-serif;font-size:15.5px;margin-bottom:3px}
+.faktor p{font-size:14.5px;color:var(--text-hell);line-height:1.55}
+
+/* Abschluss-Aufruf */
+.schluss{background:var(--blau);color:#fff;border-radius:10px;padding:44px 40px;text-align:center}
+.schluss h2{font-size:clamp(1.5rem,2.2vw,1.95rem);font-weight:800;margin-bottom:12px}
+.schluss p{color:#D5E3F1;font-size:16.5px;max-width:46em;margin:0 auto 26px}
+.schluss-aktionen{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+@media (max-width:1040px){
+  .objekte{grid-template-columns:1fr 1fr}
+  .info-zwei{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .objekte{grid-template-columns:1fr}
+  .faktoren{grid-template-columns:1fr}
+  .schluss{padding:34px 24px}
+}
+
+/* Stadtbezirke */
+.bezirke{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:900px;margin:0 auto}
+.bezirk{
+  background:#fff;border:1px solid var(--rahmen);border-radius:100px;
+  padding:9px 17px;font-size:14.5px;font-weight:500;
+}
+.sektion-grau .bezirk{background:#fff}
+.bezirke-zusatz{text-align:center;margin-top:24px;color:var(--text-hell);font-size:15.5px}
+
+/* Fliesstext-Block */
+.seo-text{max-width:840px;margin:0 auto}
+.seo-text h2{font-size:clamp(1.55rem,2.2vw,2rem);font-weight:800;margin-bottom:18px}
+.seo-text h3{font-size:19.5px;font-weight:700;margin:30px 0 10px}
+.seo-text p{color:var(--text-hell);font-size:15.8px;line-height:1.75;margin-bottom:14px}
+.seo-text ul{list-style:none;display:grid;gap:8px;margin:0 0 16px}
+.seo-text li{position:relative;padding-left:26px;color:var(--text-hell);font-size:15.8px}
+.seo-text li::before{content:"\2713";position:absolute;left:0;top:-1px;color:var(--gruen);font-weight:700}
+.seo-text a{color:var(--blau);font-weight:600}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "serviceType":"Entrümpelung Stuttgart",
+  "provider":{
+    "@type":"LocalBusiness",
+    "name":"Liba Hausmeisterservice",
+    "telephone":"+4915226236047",
+    "address":{"@type":"PostalAddress","streetAddress":"Ebertstr. 53","postalCode":"70806","addressLocality":"Kornwestheim","addressCountry":"DE"}
+  },
+  "areaServed":{"@type":"City","name":"Stuttgart"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Brauche ich in Stuttgart eine Halteverbotszone?","acceptedAnswer":{"@type":"Answer","text":"In dicht bebauten Lagen wie Stuttgart-West, Süd, Mitte oder Bad Cannstatt fast immer. Zuständig ist das Amt für öffentliche Ordnung. Der Antrag sollte etwa zwei Wochen vorher gestellt werden, die Schilder müssen mindestens drei volle Tage vorher stehen."}},
+    {"@type":"Question","name":"Entrümpeln Sie auch in Hanglagen?","acceptedAnswer":{"@type":"Answer","text":"Ja. In Stuttgart liegen viele Häuser am Hang, teils nur über Treppen erreichbar. Wir kalkulieren den Mehraufwand bei der Besichtigung ein, damit der Festpreis hält."}},
+    {"@type":"Question","name":"Kann ich meinen Hausrat nicht selbst zum Wertstoffhof bringen?","acceptedAnswer":{"@type":"Answer","text":"Für kleine Mengen ja. Stuttgarter Haushalte können zweimal im Jahr bis zu drei Kubikmeter Sperrabfall kostenfrei abgeben. Eine komplette Wohnungsauflösung übersteigt das deutlich."}},
+    {"@type":"Question","name":"Entrümpeln Sie auch Messie-Wohnungen in Stuttgart?","acceptedAnswer":{"@type":"Answer","text":"Ja. Wir kommen mit Schutzausrüstung, räumen schichtweise und achten im Mehrfamilienhaus besonders auf Diskretion. Auf Wunsch schließen wir eine Grundreinigung an."}},
+    {"@type":"Question","name":"Wie schnell sind Sie in Stuttgart vor Ort?","acceptedAnswer":{"@type":"Answer","text":"Von Kornwestheim aus sind wir in rund 20 bis 30 Minuten in Stuttgart. Besichtigungstermine schaffen wir meist innerhalb weniger Tage."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Infoleiste -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-facts">
+      <span><span class="sterne">★★★★★</span> 5,0 bei Google</span>
+      <span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Kostenlose Besichtigung
+      </span>
+      <span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Festpreisgarantie
+      </span>
+    </div>
+    <a class="topbar-tel" href="tel:+4915226236047">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/></svg>
+      01522 6236047
+    </a>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Liba Entrümpelung und Reinigung, zur Startseite">
+      <img src="assets/liba-logo.png" alt="Liba Entrümpelung und Reinigung">
+    </a>
+    <nav class="nav" aria-label="Hauptmenü">
+      <a href="entruempelung.html">Entrümpelung</a>
+      <a href="haushaltsaufloesung.html">Haushaltsauflösung</a>
+      <a href="reinigungsservice.html">Reinigung</a>
+      <a href="winterdienst.html">Winterdienst</a>
+      <a href="#einsatzgebiete">Einsatzgebiete</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a class="btn btn-gruen header-cta" href="#anfrage">Angebot anfordern</a>
+    <button class="burger" aria-label="Menü öffnen">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B3A63" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero hero-unter" style="background-image:url('assets/entruempelung-verladung.jpg')">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="hero-eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Kostenlose Besichtigung in allen 23 Stadtbezirken
+      </span>
+      <h1>Entrümpelung in Stuttgart zum Festpreis</h1>
+      <p class="hero-sub">Wohnung, Haus, Keller oder Messie-Wohnung: Wir räumen in allen 23 Stadtbezirken, vom Altbau im Westen über die Hanglage in Degerloch bis zum Gewerbeobjekt in Feuerbach. Festpreis nach kostenloser Besichtigung, besenreine Übergabe.</p>
+      <div class="vorteile">
+        <div class="vorteil">
+          <div class="vorteil-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg></div>
+          <div><b>Kurze Anfahrt</b><p>Unser Standort grenzt direkt an den Stuttgarter Norden.</p></div>
+        </div>
+        <div class="vorteil">
+          <div class="vorteil-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div><b>Treppen inklusive</b><p>Kein Aufpreis, weil der Aufzug fehlt. Das steht vorher im Preis.</p></div>
+        </div>
+        <div class="vorteil">
+          <div class="vorteil-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="12" rx="2"/><path d="M2.5 11h19"/></svg></div>
+          <div><b>Halteverbot geregelt</b><p>Wir sagen Ihnen, ob eine Zone nötig ist, und beantragen sie.</p></div>
+        </div>
+        <div class="vorteil">
+          <div class="vorteil-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 7.3l5-.7z"/><path d="M8 21h8"/></svg></div>
+          <div><b>Besenrein übergeben</b><p>Bereit für Übergabe, Verkauf oder Neuvermietung.</p></div>
+        </div>
+      </div>
+      <div class="hero-aktionen">
+        <a class="btn btn-gruen btn-gross" href="#anfrage">Kostenloses Angebot anfordern</a>
+        <a class="btn btn-weiss btn-gross" href="tel:+4915226236047">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/></svg>
+          01522 6236047
+        </a>
+      </div>
+    </div>
+<!-- Anfrageformular -->
+    <div class="form-karte" id="anfrage">
+      <div class="form-kopf">
+        <h2>In zwei Minuten zum Angebot</h2>
+        <p>Für alle Leistungen. Kostenlos und unverbindlich.</p>
+      </div>
+      <div class="form-koerper">
+        <form>
+          <div class="feld">
+            <label for="leistung">Welche Leistung brauchen Sie?</label>
+            <select id="leistung" name="leistung">
+              <option>Entrümpelung</option>
+              <option>Haushaltsauflösung</option>
+              <option>Reinigungsservice</option>
+              <option>Winterdienst</option>
+              <option>Noch unklar, bitte beraten</option>
+            </select>
+          </div>
+          <div class="feld">
+            <label for="objekt">Um welches Objekt geht es?</label>
+            <select id="objekt" name="objekt">
+              <option>Wohnung</option>
+              <option>Haus</option>
+              <option>Keller</option>
+              <option>Dachboden</option>
+              <option>Garage</option>
+              <option>Gewerbeobjekt</option>
+              <option>Außenfläche oder Gehweg</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="feld feld-paar">
+            <div>
+              <label for="vorname">Vorname</label>
+              <input id="vorname" name="vorname" type="text" placeholder="Vorname">
+            </div>
+            <div>
+              <label for="nachname">Nachname</label>
+              <input id="nachname" name="nachname" type="text" placeholder="Nachname">
+            </div>
+          </div>
+          <div class="feld feld-paar">
+            <div>
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" placeholder="name@beispiel.de">
+            </div>
+            <div>
+              <label for="telefon">Telefon</label>
+              <input id="telefon" name="telefon" type="tel" placeholder="Für Rückfragen">
+            </div>
+          </div>
+          <div class="feld feld-paar">
+            <div>
+              <label for="plz">PLZ</label>
+              <input id="plz" name="plz" type="text" inputmode="numeric" placeholder="70806">
+            </div>
+            <div>
+              <label for="ort">Ort</label>
+              <input id="ort" name="ort" type="text" placeholder="Ort">
+            </div>
+          </div>
+          <div class="feld">
+            <label for="anmerkung">Anmerkungen zum Objekt</label>
+            <textarea id="anmerkung" name="anmerkung" placeholder="Stockwerk, Aufzug, Menge, Wunschtermin"></textarea>
+          </div>
+          <label class="zustimmung" for="dsgvo">
+            <input id="dsgvo" name="dsgvo" type="checkbox">
+            <span>Ich stimme der <a href="datenschutz.html">Datenschutzerklärung</a> zu und bin mit der Kontaktaufnahme einverstanden.</span>
+          </label>
+          <button class="btn btn-gruen btn-gross" type="submit">Angebot anfordern</button>
+          <div class="form-fuss">
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2E9E5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Kostenlos
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2E9E5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Antwort in 24 Stunden
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2E9E5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Keine Verpflichtung
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vertrauensleiste -->
+<section class="vertrauen">
+  <div class="wrap">
+    <div class="vertrauen-punkt">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#0E5BA7"><path d="M12 2l2.4 5 5.6.8-4 3.9 1 5.5-5-2.6-5 2.6 1-5.5-4-3.9 5.6-.8z"/></svg>
+      <span>5,0 bei Google<small>3 Bewertungen</small></span>
+    </div>
+    <div class="vertrauen-punkt">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0E5BA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+      <span>Kurzfristige Termine<small>Oft in wenigen Tagen</small></span>
+    </div>
+    <div class="vertrauen-punkt">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0E5BA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.3-3.1 8-7.5 9.5-4.4-1.5-7.5-5.2-7.5-9.5V6z"/><polyline points="8.8 12 11.2 14.4 15.4 10"/></svg>
+      <span>Versichert<small>Betriebshaftpflicht</small></span>
+    </div>
+    <div class="vertrauen-punkt">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0E5BA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="12" rx="2"/><path d="M2.5 11h19"/></svg>
+      <span>Festpreis<small>Keine versteckten Kosten</small></span>
+    </div>
+    <div class="vertrauen-punkt">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0E5BA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M9.5 20v-5.5h5V20"/></svg>
+      <span>Besenrein<small>Sofort nutzbar</small></span>
+    </div>
+  </div>
+</section>
+
+<!-- Stadtbezirke -->
+<section class="sektion" id="bezirke">
+  <div class="wrap">
+    <div class="kopf">
+      <span class="label">Einsatzgebiet</span>
+      <h2>Wir räumen in allen Stadtbezirken</h2>
+      <p>Stuttgart ist weitläufig und sehr unterschiedlich bebaut. Wir fahren jeden Bezirk an, vom Talkessel bis auf die Filder.</p>
+    </div>
+    <div class="bezirke">
+      <span class="bezirk">Stuttgart-Mitte</span>
+      <span class="bezirk">Stuttgart-Nord</span>
+      <span class="bezirk">Stuttgart-Ost</span>
+      <span class="bezirk">Stuttgart-Süd</span>
+      <span class="bezirk">Stuttgart-West</span>
+      <span class="bezirk">Bad Cannstatt</span>
+      <span class="bezirk">Birkach</span>
+      <span class="bezirk">Botnang</span>
+      <span class="bezirk">Degerloch</span>
+      <span class="bezirk">Feuerbach</span>
+      <span class="bezirk">Hedelfingen</span>
+      <span class="bezirk">Möhringen</span>
+      <span class="bezirk">Mühlhausen</span>
+      <span class="bezirk">Münster</span>
+      <span class="bezirk">Obertürkheim</span>
+      <span class="bezirk">Plieningen</span>
+      <span class="bezirk">Sillenbuch</span>
+      <span class="bezirk">Stammheim</span>
+      <span class="bezirk">Untertürkheim</span>
+      <span class="bezirk">Vaihingen</span>
+      <span class="bezirk">Wangen</span>
+      <span class="bezirk">Weilimdorf</span>
+      <span class="bezirk">Zuffenhausen</span>
+    </div>
+    <p class="bezirke-zusatz">Die nördlichen Bezirke Zuffenhausen, Stammheim und Mühlhausen liegen praktisch vor unserer Haustür. Dort sind wir oft schon am nächsten Tag zur Besichtigung.</p>
+  </div>
+</section>
+
+<!-- Besonderheiten -->
+<section class="sektion sektion-grau" id="besonderheiten">
+  <div class="wrap">
+    <div class="kopf">
+      <span class="label">Vor Ort</span>
+      <h2>Was eine Entrümpelung in Stuttgart besonders macht</h2>
+      <p>Wer in Stuttgart räumt, braucht mehr als einen Transporter. Drei Dinge unterscheiden die Stadt von fast jeder Nachbargemeinde.</p>
+    </div>
+    <div class="objekte">
+      <article class="objekt">
+        <div class="objekt-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M4 20 10 8l4 6 3-4 3 10"/></svg></div>
+        <h3>Hanglagen und Stäffele</h3>
+        <p>Der Talkessel bringt es mit sich, dass viele Häuser am Hang stehen. In Lagen wie dem Süden, Degerloch oder Gablenberg führt der Weg zum Fahrzeug oft über Treppen, manchmal über eine halbe Stäffele. Das kostet Zeit und Personal. Wir schauen uns das bei der Besichtigung an und rechnen es direkt ein, statt später nachzufordern.</p>
+      </article>
+      <article class="objekt">
+        <div class="objekt-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6l8-3 8 3v15"/><path d="M9 21v-6h6v6"/><path d="M9 10h.01M15 10h.01"/></svg></div>
+        <h3>Altbauten ohne Aufzug</h3>
+        <p>Im Westen, im Süden und im Norden stehen viele Gebäude aus der Zeit vor dem Krieg: hohe Decken, enge Treppenhäuser, kein Aufzug. Große Schränke und Sofas müssen dort zerlegt werden, bevor sie hinauskommen. Wir bringen das Werkzeug dafür mit und schützen Geländer und Wände auf dem Weg nach unten.</p>
+      </article>
+      <article class="objekt">
+        <div class="objekt-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="8" rx="2"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></div>
+        <h3>Enge Parksituation</h3>
+        <p>In der Innenstadt und in Bad Cannstatt ist Anwohnerparken die Regel, ein freier Platz vor der Haustür die Ausnahme. Je weiter der Transporter entfernt steht, desto länger dauert die Räumung. Deshalb klären wir die Halteverbotszone früh, statt am Einsatztag zu improvisieren.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Halteverbot und Entsorgung -->
+<section class="sektion" id="organisation">
+  <div class="wrap">
+    <div class="info-zwei">
+      <div class="info-block">
+        <h3>Halteverbotszone in Stuttgart</h3>
+        <p>Zuständig ist das Amt für öffentliche Ordnung als Straßenverkehrsbehörde der Stadt. Zwei Fristen sollten Sie kennen, wenn der Termin geplant wird:</p>
+        <ul class="liste">
+          <li>Antrag möglichst rund zwei Wochen vor dem Termin stellen</li>
+          <li>Die Schilder müssen mindestens drei volle Tage vorher stehen</li>
+          <li>Erst dann können falsch parkende Fahrzeuge abgeschleppt werden</li>
+        </ul>
+        <p>Wir sagen Ihnen bei der Besichtigung, ob eine Zone für Ihre Adresse nötig ist, und übernehmen auf Wunsch die Beantragung. Angaben ohne Gewähr, verbindlich ist die Auskunft der Stadt.</p>
+      </div>
+      <div class="info-block">
+        <h3>Entsorgung in Stuttgart</h3>
+        <p>Für Abfall und Wertstoffe ist die Abfallwirtschaft Stuttgart zuständig, die auch die Wertstoffhöfe im Stadtgebiet betreibt. Für kleine Mengen ist Selbstanlieferung möglich:</p>
+        <ul class="liste">
+          <li>Stuttgarter Haushalte dürfen zweimal jährlich bis zu drei Kubikmeter Sperrabfall kostenfrei abgeben</li>
+          <li>Dafür ist ein Anlieferschein nötig</li>
+        </ul>
+        <p>Eine komplette Wohnungs- oder Hausauflösung übersteigt dieses Kontingent deutlich. Wir entsorgen deshalb über die gewerblichen Wege, trennen nach Materialart und stellen Ihnen auf Wunsch Nachweise aus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Messie -->
+<section class="sektion sektion-grau" id="messie">
+  <div class="wrap">
+    <div class="kopf">
+      <span class="label">Sonderfall</span>
+      <h2>Messie-Wohnung entrümpeln in Stuttgart</h2>
+      <p>Die Entrümpelung einer Messie-Wohnung braucht Erfahrung und vor allem Diskretion. Wir bewerten niemanden und arbeiten so, dass im Haus möglichst wenig auffällt.</p>
+    </div>
+    <div class="info-zwei">
+      <div class="info-block">
+        <h3>Diskretion im Mehrfamilienhaus</h3>
+        <p>In Stuttgarter Mietshäusern bekommt die Nachbarschaft schnell mit, was im Treppenhaus passiert. Deshalb stimmen wir den Ablauf vorher mit Ihnen ab:</p>
+        <ul class="liste">
+          <li>Anfahrt ohne Firmenauflauf vor der Tür</li>
+          <li>Auf Wunsch Termin außerhalb der üblichen Zeiten</li>
+          <li>Kurze Wege durchs Treppenhaus, Böden werden abgedeckt</li>
+          <li>Keine Rückfragen bei Nachbarn, keine Gespräche im Haus</li>
+        </ul>
+        <p>Anfragen zu Messie-Wohnungen kommen häufig von Angehörigen, gesetzlichen Betreuern oder Hausverwaltungen. Auch dann sprechen wir ausschließlich mit der Person, die uns beauftragt.</p>
+      </div>
+      <div class="info-block">
+        <h3>Wie wir vorgehen</h3>
+        <p>Eine Messie-Wohnung unterscheidet sich technisch deutlich von einer normalen Räumung. Wir planen den Einsatz entsprechend:</p>
+        <ul class="liste">
+          <li>Schutzausrüstung für Atemwege, Hände und Augen</li>
+          <li>Schichtweises Räumen statt alles auf einmal</li>
+          <li>Persönliche Dokumente und Fundstücke werden aussortiert und übergeben</li>
+          <li>Auf Wunsch anschließende Grundreinigung und Geruchsbehandlung</li>
+        </ul>
+        <p>Bei der Besichtigung sehen wir, wie viel Aufwand tatsächlich nötig ist. Danach steht der Festpreis, auch wenn sich unter der obersten Schicht noch mehr findet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leistungsumfang Verweis -->
+<section class="sektion" id="leistung">
+  <div class="wrap">
+    <div class="kopf">
+      <span class="label">Umfang</span>
+      <h2>Was wir in Stuttgart übernehmen</h2>
+      <p>Der Ablauf, die enthaltenen Leistungen und die Richtpreise gelten überall gleich. Alles im Detail finden Sie auf unserer Seite zur Entrümpelung.</p>
+    </div>
+    <div class="objekte">
+      <article class="objekt">
+        <h3>Wohnung und Haus</h3>
+        <p>Vollständige Räumung inklusive Keller und Dachbodenanteil, Demontage von Einbauten, besenreine Übergabe an Vermieter oder Käufer.</p>
+      </article>
+      <article class="objekt">
+        <h3>Keller, Dachboden, Garage</h3>
+        <p>Auch einzelne Räume ohne die gesamte Wohnung. Gerade in Mehrfamilienhäusern im Stadtgebiet ein häufiger Auftrag.</p>
+      </article>
+      <article class="objekt">
+        <h3>Gewerbe und Büro</h3>
+        <p>Nach Betriebsaufgabe oder Umzug, auf Wunsch außerhalb der Öffnungszeiten, damit der Betrieb nebenan weiterläuft.</p>
+      </article>
+    </div>
+    <p class="orte-zusatz"><a class="mehr" href="entruempelung.html">Alle Leistungen, Ablauf und Richtpreise ansehen</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sektion sektion-grau" id="faq">
+  <div class="wrap">
+    <div class="kopf">
+      <span class="label">Häufige Fragen</span>
+      <h2>Fragen zur Entrümpelung in Stuttgart</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Brauche ich eine Halteverbotszone?</summary>
+        <div class="faq-inhalt">In dicht bebauten Lagen wie Stuttgart-West, Süd, Mitte oder Bad Cannstatt fast immer, weil sonst kein Platz für das Fahrzeug frei ist. Zuständig ist das Amt für öffentliche Ordnung. Planen Sie rund zwei Wochen Vorlauf ein, die Schilder müssen mindestens drei volle Tage vorher stehen. Wir übernehmen das auf Wunsch für Sie.</div>
+      </details>
+      <details>
+        <summary>Entrümpeln Sie auch in Hanglagen?</summary>
+        <div class="faq-inhalt">Ja, das gehört in Stuttgart zum Alltag. Wenn der Weg zum Fahrzeug über Treppen oder eine Stäffele führt, planen wir mehr Personal ein. Wichtig ist nur, dass wir das bei der Besichtigung sehen, dann steht es im Festpreis und wird später nicht nachberechnet.</div>
+      </details>
+      <details>
+        <summary>Kann ich den Hausrat nicht selbst zum Wertstoffhof bringen?</summary>
+        <div class="faq-inhalt">Bei kleinen Mengen lohnt sich das durchaus. Stuttgarter Haushalte können zweimal im Jahr bis zu drei Kubikmeter Sperrabfall kostenfrei abgeben, dafür brauchen Sie einen Anlieferschein. Eine komplette Wohnungsauflösung bringt jedoch ein Vielfaches davon zusammen, dazu Elektrogeräte und Sondermüll, die gesondert behandelt werden müssen.</div>
+      </details>
+      <details>
+        <summary>Wie schnell sind Sie vor Ort?</summary>
+        <div class="faq-inhalt">Von Kornwestheim aus brauchen wir je nach Bezirk rund 20 bis 30 Minuten. Besichtigungen schaffen wir meist innerhalb weniger Tage, in den nördlichen Bezirken oft noch schneller.</div>
+      </details>
+      <details>
+        <summary>Entrümpeln Sie auch Messie-Wohnungen in Stuttgart?</summary>
+        <div class="faq-inhalt">Ja, das gehört zu unseren regelmäßigen Aufträgen im Stadtgebiet. Wir kommen mit Schutzausrüstung, räumen schichtweise und achten besonders im Mehrfamilienhaus auf Diskretion. Persönliche Dokumente sortieren wir aus und übergeben sie Ihnen. Auf Wunsch schließen wir eine Grundreinigung an, damit die Wohnung danach wieder vermietbar ist.</div>
+      </details>
+      <details>
+        <summary>Arbeiten Sie auch für Hausverwaltungen in Stuttgart?</summary>
+        <div class="faq-inhalt">Ja, das ist ein großer Teil unserer Aufträge im Stadtgebiet. Für Verwaltungen räumen wir einzelne Kellerabteile ebenso wie komplette Wohnungen nach einem Mieterwechsel. Auf Wunsch erhalten Sie Fotos der Übergabe und Entsorgungsnachweise für die Akte.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Nachbarorte -->
+<section class="sektion" id="einsatzgebiete">
+  <div class="wrap">
+    <div class="kopf">
+      <span class="label">Region</span>
+      <h2>Auch rund um Stuttgart im Einsatz</h2>
+    </div>
+    <div class="orte">
+      <a class="ort" href="entruempelung-ludwigsburg.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Ludwigsburg<small>Entrümpelung</small></span>
+      </a>
+      <a class="ort" href="entruempelung-kornwestheim.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Kornwestheim<small>Entrümpelung</small></span>
+      </a>
+      <a class="ort" href="entruempelung-fellbach.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Fellbach<small>Entrümpelung</small></span>
+      </a>
+      <a class="ort" href="entruempelung-leonberg.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Leonberg<small>Entrümpelung</small></span>
+      </a>
+      <a class="ort" href="entruempelung-waiblingen.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Waiblingen<small>Entrümpelung</small></span>
+      </a>
+      <a class="ort" href="entruempelung-esslingen.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Esslingen am Neckar<small>Entrümpelung</small></span>
+      </a>
+      <a class="ort" href="entruempelung-bietigheim-bissingen.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+        <span>Bietigheim-Bissingen<small>Entrümpelung</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SEO-Text -->
+<section class="sektion sektion-grau" id="ratgeber">
+  <div class="wrap">
+    <div class="seo-text">
+      <h2>Entrümpelung in Stuttgart: was Sie vorher wissen sollten</h2>
+      <p>Stuttgart ist eine Stadt mit sehr unterschiedlichem Wohnraum. Zwischen den Gründerzeithäusern im Westen, den Nachkriegsbauten in Bad Cannstatt, den Hanglagen über dem Kessel und den Einfamilienhäusern auf den Fildern liegen Welten. Genau das macht eine Entrümpelung in Stuttgart aufwendiger als in vielen Nachbargemeinden. Wer hier räumt, muss vorher wissen, wie der Hausrat aus dem Gebäude kommt und wo das Fahrzeug stehen kann.</p>
+      <p>Wir übernehmen Räumungen im gesamten Stadtgebiet, von der einzelnen Kellerbox bis zur kompletten Hausauflösung. Nach einer kostenlosen Besichtigung bekommen Sie einen verbindlichen Festpreis, in dem Personal, Transport, Entsorgung und die besenreine Übergabe enthalten sind.</p>
+
+      <h3>Wann eine Entrümpelung ansteht</h3>
+      <p>Die Anlässe sind fast immer dieselben, und selten sucht sich jemand den Zeitpunkt aus:</p>
+      <ul>
+        <li>Eine Wohnung muss nach einem Mieterwechsel übergeben werden</li>
+        <li>Ein Haus wird verkauft und soll leer an den Käufer gehen</li>
+        <li>Nach einem Todesfall steht die Nachlassräumung an</li>
+        <li>Ein Angehöriger zieht ins Pflegeheim und der Haushalt wird aufgelöst</li>
+        <li>Keller, Dachboden oder Garage sind über Jahre zugestellt worden</li>
+        <li>Eine Messie-Wohnung muss geräumt und wieder vermietbar gemacht werden</li>
+        <li>Ein Betrieb wird aufgegeben und die Räume müssen geräumt werden</li>
+      </ul>
+      <p>In den meisten Fällen drückt ein Termin: die Wohnungsübergabe, der Notartermin oder der Einzug der Nachmieter. Deshalb ist die Frage, wie schnell jemand kommen kann, oft wichtiger als der Preis.</p>
+
+      <h3>Wohnungsauflösung, Haushaltsauflösung, Entrümpelung</h3>
+      <p>Die Begriffe werden durcheinander benutzt, gemeint ist meist dasselbe Ziel: Am Ende sind die Räume leer und übergabefertig. Von einer Entrümpelung spricht man eher, wenn einzelne Bereiche geräumt werden, etwa ein Keller oder ein Dachboden. Eine Wohnungs- oder Haushaltsauflösung meint den kompletten Haushalt, häufig verbunden mit einer Nachlassregelung. Für uns ändert das wenig am Ablauf, wohl aber am Umfang und damit am Preis.</p>
+
+      <h3>Was den Preis in Stuttgart nach oben treibt</h3>
+      <p>Neben Menge und Objektgröße gibt es vor Ort drei typische Faktoren. Erstens die Etage ohne Aufzug, die im Altbaubestand eher Regel als Ausnahme ist. Zweitens die Entfernung zum Fahrzeug: Wenn der Transporter fünfzig Meter weiter steht, weil kein Platz frei war, verdoppelt sich die Trageleistung. Drittens die Hanglage, wenn der Weg über Treppen oder eine Stäffele führt. Diese Punkte klären wir bei der Besichtigung, damit sie im Festpreis stehen und nicht hinterher als Nachforderung auftauchen.</p>
+      <p>In die andere Richtung wirkt die Wertanrechnung. Gut erhaltene Möbel, Werkzeug, Elektrogeräte oder Sammlerstücke bewerten wir und ziehen den Betrag vom Preis ab. Was verwertet wird, besprechen wir vorher.</p>
+
+      <h3>Entsorgung und was mit brauchbaren Dingen passiert</h3>
+      <p>Nicht alles, was aus einer Wohnung kommt, ist Abfall. Brauchbare Möbel und Kleidung geben wir weiter, statt sie zu vernichten. Wertstoffe trennen wir nach Materialart, Elektrogeräte und Sondermüll gehen den vorgeschriebenen Weg. Auf Wunsch erhalten Sie Nachweise über die Entsorgung, was bei Nachlassangelegenheiten oder gegenüber einer Hausverwaltung oft verlangt wird.</p>
+
+      <h3>Auch wenn Sie nicht vor Ort sind</h3>
+      <p>Viele unserer Auftraggeber wohnen gar nicht in Stuttgart, sondern regeln von weiter weg den Haushalt eines Angehörigen. Das ist kein Problem. Sie können uns den Schlüssel übergeben, wir halten Sie während der Räumung per Foto oder Nachricht auf dem Laufenden und übergeben am Ende wie vereinbart. Für Hausverwaltungen dokumentieren wir die Übergabe auf Wunsch für die Akte.</p>
+
+      <h3>Von Kornwestheim in kurzer Zeit im Stadtgebiet</h3>
+      <p>Unser Standort liegt direkt nördlich der Stadtgrenze. Die nördlichen Bezirke wie Zuffenhausen, Stammheim, Mühlhausen und Feuerbach erreichen wir in wenigen Minuten, ins Zentrum und in die südlichen Bezirke dauert es je nach Verkehr etwas länger. Das ist der praktische Grund, warum wir in Stuttgart auch kurzfristige Besichtigungen anbieten können.</p>
+      <p>Schicken Sie uns ein paar Angaben zum Objekt, gern auch mit Fotos. Wir melden uns zeitnah und stimmen einen Termin für die kostenlose Besichtigung ab. <a href="entruempelung.html">Alle Leistungen und Richtpreise</a> finden Sie auf unserer Übersichtsseite zur Entrümpelung.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Abschluss -->
+<section class="sektion">
+  <div class="wrap">
+    <div class="schluss">
+      <h2>Ihre Entrümpelung in Stuttgart</h2>
+      <p>Schicken Sie uns ein paar Angaben zum Objekt. Wir kommen kostenlos vorbei und nennen Ihnen einen Festpreis, der auch am Einsatztag noch gilt.</p>
+      <div class="schluss-aktionen">
+        <a class="btn btn-gruen btn-gross" href="#anfrage">Kostenloses Angebot anfordern</a>
+        <a class="btn btn-weiss btn-gross" href="tel:+4915226236047">01522 6236047 anrufen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hotline -->
+<section class="hotline">
+  <div class="wrap">
+    <div>
+      <h2>Lieber direkt sprechen?</h2>
+      <p>Montag bis Samstag, 8 bis 20 Uhr. Wir beraten Sie kostenlos und unverbindlich.</p>
+    </div>
+    <div class="hotline-aktionen">
+      <a class="btn btn-gruen btn-gross" href="tel:+4915226236047">01522 6236047 anrufen</a>
+      <a class="btn btn-weiss btn-gross" href="#anfrage">Angebot anfordern</a>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="fuss">
+  <div class="wrap">
+    <div>
+      <img src="assets/liba-logo-weiss.png" alt="Liba Entrümpelung und Reinigung">
+      <div class="fuss-kontakt">
+        <span>Liba Hausmeisterservice</span>
+        <span>Ebertstr. 53, 70806 Kornwestheim</span>
+        <a href="tel:+4915226236047">01522 6236047</a>
+        <a href="mailto:libahausmeisterservice@gmail.com">libahausmeisterservice@gmail.com</a>
+      </div>
+    </div>
+    <div>
+      <h3>Leistungen</h3>
+      <ul>
+        <li><a href="entruempelung.html">Entrümpelung</a></li>
+        <li><a href="haushaltsaufloesung.html">Haushaltsauflösung</a></li>
+        <li><a href="reinigungsservice.html">Reinigungsservice</a></li>
+        <li><a href="winterdienst.html">Winterdienst</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Einsatzgebiete</h3>
+      <ul>
+        <li><a href="entruempelung-stuttgart.html">Entrümpelung Stuttgart</a></li>
+        <li><a href="entruempelung-ludwigsburg.html">Entrümpelung Ludwigsburg</a></li>
+        <li><a href="entruempelung-kornwestheim.html">Entrümpelung Kornwestheim</a></li>
+        <li><a href="entruempelung-bietigheim-bissingen.html">Entrümpelung Bietigheim-Bissingen</a></li>
+        <li><a href="entruempelung-waiblingen.html">Entrümpelung Waiblingen</a></li>
+        <li><a href="entruempelung-fellbach.html">Entrümpelung Fellbach</a></li>
+        <li><a href="entruempelung-leonberg.html">Entrümpelung Leonberg</a></li>
+        <li><a href="entruempelung-esslingen.html">Entrümpelung Esslingen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="#" id="cookie-einstellungen">Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fuss-unten">
+    <div class="wrap">
+      <span>&copy; 2026 Liba Hausmeisterservice</span>
+      <span>Entrümpelung, Reinigung und Winterdienst</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp -->
+<a class="wa" href="https://wa.me/4915226236047" aria-label="Schreiben Sie uns per WhatsApp" target="_blank" rel="noopener">
+  <svg width="31" height="31" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
+    <path d="M16.04 4C9.9 4 4.92 8.98 4.92 15.12c0 2.13.6 4.12 1.63 5.82L4.5 27.5l6.73-2.01a11.06 11.06 0 0 0 4.81 1.1h.01c6.14 0 11.12-4.98 11.12-11.12S22.18 4 16.04 4zm0 20.36h-.01c-1.5 0-2.97-.4-4.25-1.17l-.3-.18-3.99 1.19 1.2-3.89-.2-.32a9.2 9.2 0 0 1-1.41-4.89c0-5.1 4.15-9.24 9.25-9.24 2.47 0 4.79.96 6.54 2.71a9.18 9.18 0 0 1 2.71 6.54c0 5.1-4.15 9.25-9.24 9.25zm5.07-6.93c-.28-.14-1.64-.81-1.9-.9-.25-.09-.44-.14-.62.14-.19.28-.72.9-.88 1.09-.16.19-.32.21-.6.07-.28-.14-1.17-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.62-1.51-.86-2.06-.22-.54-.45-.47-.62-.48h-.53c-.19 0-.49.07-.74.35-.26.28-.97.95-.97 2.32s1 2.69 1.14 2.88c.14.19 1.96 3 4.75 4.2.66.29 1.18.46 1.59.59.67.21 1.27.18 1.75.11.54-.08 1.64-.67 1.87-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/>
+  </svg>
+</a>
+
+</body>
+</html>
