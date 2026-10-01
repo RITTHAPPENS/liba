@@ -729,6 +729,9 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;text-wrap:balance}
   .ueber-fakten{padding:28px 24px}
 }
 
+.info-zwei > *{min-width:0}
+.info-block{overflow-wrap:break-word}
+
 /* Anfrageformular in drei Schritten */
 .fortschritt{display:flex;gap:6px;margin-bottom:18px}
 .fortschritt span{flex:1;height:4px;border-radius:2px;background:var(--rahmen-leicht)}
@@ -763,6 +766,18 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;text-wrap:balance}
 .form-danke a{color:var(--blau)}
 @media (max-width:420px){.option span{font-size:14px;padding:8px 6px;hyphens:manual}}
 @media (prefers-reduced-motion:reduce){.option span{transition:none}}
+
+/* Rechtliche Seiten */
+.recht{max-width:760px;margin:0 auto}
+.recht h2{font-size:21px;font-weight:700;margin:40px 0 10px}
+.recht h2:first-child{margin-top:0}
+.recht p,.recht li{color:var(--text-hell);font-size:16.5px;line-height:1.75}
+.recht p{margin-bottom:12px}
+.recht ul{margin:0 0 14px 20px}
+.recht a{color:var(--blau)}
+.platzhalter{background:#FFF4CC;color:#5C4400;padding:1px 6px;border-radius:4px}
+.hinweis-kasten{background:#FFF8E1;border:1px solid #F1D98A;border-radius:10px;padding:20px 22px;margin-bottom:36px}
+.hinweis-kasten p{color:#5C4400;margin:0}
 </style>
 
 <script type="application/ld+json">
